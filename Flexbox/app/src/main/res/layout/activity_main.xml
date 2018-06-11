@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="多选:"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <com.example.administrator.myapplication.baseWidget.TagFlowLayout
+        android:id="@+id/flow_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:alignContent="flex_start"
+        app:alignItems="center"
+        app:defaultDrawable="@drawable/bg_flow_unselect"
+        app:defaultTextColor="@color/app_green"
+        app:dividerDrawable="@drawable/bg_flow_divider"
+        app:flexDirection="row"
+        app:flexWrap="wrap"
+        app:justifyContent="flex_start"
+        app:mode="MULTI"
+        app:selectDrawable="@drawable/bg_flow_selected"
+        app:selectTextColor="@android:color/white"
+        app:showDivider="beginning|middle|end"
+        tools:ignore="MissingPrefix" />
+    <Button
+        android:id="@+id/clear1"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="清除"/>
+
+    <TextView
+        android:id="@+id/btn_get_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text=""/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:text="单选:"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <com.example.administrator.myapplication.baseWidget.TagFlowLayout
+        android:id="@+id/flow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:alignContent="flex_start"
+        app:alignItems="center"
+        app:defaultDrawable="@drawable/bg_flow_unselect"
+        app:defaultTextColor="@color/app_green"
+        app:dividerDrawable="@drawable/bg_flow_divider"
+        app:flexDirection="row"
+        app:flexWrap="wrap"
+        app:justifyContent="flex_start"
+        app:mode="SINGLE"
+        app:selectDrawable="@drawable/bg_flow_selected"
+        app:selectTextColor="@android:color/white"
+        app:showDivider="beginning|middle|end"
+        tools:ignore="MissingPrefix" />
+    <Button
+        android:id="@+id/clear2"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="清除"/>
+
+    <TextView
+        android:id="@+id/btn_get"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text=""/>
+
+
+</LinearLayout>
+
